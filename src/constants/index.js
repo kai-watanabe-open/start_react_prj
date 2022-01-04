@@ -1,1 +1,2 @@
-const MASTER_CONST = "test";
+// テスト用のConst
+export const MASTER_CONST = "Const Value";

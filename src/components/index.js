@@ -1,29 +1,13 @@
-function Main(props) {
-  const { plus, minus, count } = props;
+import CountUp from "./countUp";
+import KokyakuSoshiki from "./kokyakuSoshiki";
 
-  const handleClick = (type) => {
-    type === "PLUS" ? plus() : minus();
-  };
-
+function MainComponent() {
   return (
-    <div className="Main">
-      <h1>Count: {count}</h1>
-      <button
-        onClick={() => {
-          handleClick("PLUS");
-        }}
-      >
-        Up
-      </button>
-      <button
-        onClick={() => {
-          handleClick("MINUS");
-        }}
-      >
-        Down
-      </button>
+    <div className="Component">
+      <CountUp />
+      <KokyakuSoshiki />
     </div>
   );
 }
 
-export default Main;
+export default MainComponent;

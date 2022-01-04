@@ -1,9 +1,9 @@
 import { useCallback } from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { decrease, increase } from "../store/counterSlice";
-import Main from "../components";
+import { decrease, increase } from "../../store/counterSlice";
+import CountUpMain from "../../components/countUp/countUpMain";
 
-function MainContainer() {
+function CountUpContainer() {
   const count = useSelector((state) => state.counter.count);
   const dispatch = useDispatch();
 
@@ -15,7 +15,7 @@ function MainContainer() {
     dispatch(decrease());
   }, [dispatch]);
 
-  return <Main count={count} plus={plus_func} minus={minus_func} />;
+  return <CountUpMain count={count} plus={plus_func} minus={minus_func} />;
 }
 
-export default MainContainer;
+export default CountUpContainer;
