@@ -1,5 +1,5 @@
 import CountUp from "./countUp";
-import KokyakuSoshiki from "./kokyakuSoshiki";
+import KokyakuUser from "./kokyakuUser";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Header from "./header";
 
@@ -10,7 +10,7 @@ function MainComponent() {
         <Header />
         <Routes>
           <Route path="/" element={<CountUp />} />
-          <Route path="/about" element={<KokyakuSoshiki />} />
+          <Route path="/users" element={<KokyakuUser />} />
         </Routes>
       </Router>
     </>

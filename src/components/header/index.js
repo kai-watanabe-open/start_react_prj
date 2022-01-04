@@ -7,7 +7,7 @@ function Header() {
         <Link to="/">Count</Link>
       </li>
       <li>
-        <Link to="/about">Soshiki</Link>
+        <Link to="/users">users</Link>
       </li>
     </ul>
   );
